@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:onClick="btnCall"
     android:orientation="vertical" >
 
     <TextView
@@ -20,7 +21,10 @@
         android:layout_width="fill_parent"
         android:layout_height="300dip"
         android:layout_weight="1.25"
+        android:clickable="true"
+        android:focusable="false"
         android:padding="5dip" >
+
     </ListView>
 
     <Button

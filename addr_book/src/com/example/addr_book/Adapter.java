@@ -5,17 +5,24 @@ import java.util.ArrayList;
 import com.example.addr_book.contactInfo;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.app.Activity;
 
-public class Adapter extends BaseAdapter{
+public class Adapter extends BaseAdapter {
 	private Context context;
 	private ArrayList<contactInfo> contactInfo;
 	private LayoutInflater inflater;
-	private ViewHolder holder;
+	ViewHolder holder;
 
 	public Adapter(Context context,ArrayList<contactInfo> contactInfo) {
 		this.context = context;
@@ -32,6 +39,7 @@ public class Adapter extends BaseAdapter{
 	public long getItemId(int position) {
 		return 0;
 	}
+	
 
 	public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -59,6 +67,9 @@ public class Adapter extends BaseAdapter{
 	//	private ImageView contactPhotoView;
 		private TextView contactNameView;
 		private TextView phoneNumberView;
-	}
-
+	}	
+	
 }
+
+
+

@@ -25,15 +25,17 @@ import android.view.View;
 //import android.view.ViewGroup;  
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemLongClickListener;
 //import android.widget.BaseAdapter;  
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 //import android.widget.TextView; 
 //import android.widget.SimpleAdapter;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnItemClickListener {
     Context mContext = null;  
  
     private static final String[] PHONES_PROJECTION = new String[] {  
@@ -100,6 +102,7 @@ public class MainActivity extends Activity {
         getPhoneContacts();
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.mainview);
+        listView.setOnItemClickListener(this);
         
         /*thansform the arraylist to array*/
         String[] value1 = new String[mContactsName.size()];
@@ -125,4 +128,13 @@ public class MainActivity extends Activity {
 	    startActivity(intent);
 	    }
 	    
+	    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+	    	  Intent callIntent = new Intent(Intent.ACTION_DIAL);
+	          callIntent.setData(Uri.parse("tel:" + mContactsNumber.get(position).toString()));
+	          startActivity(callIntent);
+	    }
+
+	             
 }
+
+

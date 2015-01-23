@@ -18,7 +18,8 @@ public final class R {
     public static final class id {
         public static final int GridLayout=0x7f050003;
         public static final int btnAdd=0x7f05000a;
-        public static final int btnLogin=0x7f050010;
+        public static final int btnLogin=0x7f050011;
+        public static final int btnUser=0x7f050010;
         public static final int btn_new=0x7f050002;
         public static final int contactName=0x7f05000c;
         public static final int contactPhoto=0x7f05000b;
