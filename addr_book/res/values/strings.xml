@@ -3,5 +3,8 @@
 
     <string name="app_name">address book</string>
      <string name="txt_new">NEW CONTACT</string>
+     <string name="name">Contact Name</string>
+     <string name="add_contact">Add Contact</string>
+     <string name="login">Login</string>
 
 </resources>

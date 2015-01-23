@@ -3,7 +3,6 @@ package com.example.addr_book;
 import java.util.ArrayList;
 
 import com.example.addr_book.contactInfo;
-import com.example.addr_book.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;

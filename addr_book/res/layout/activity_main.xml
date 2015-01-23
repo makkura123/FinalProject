@@ -27,6 +27,7 @@
         android:id="@+id/btn_new"
         android:layout_width="fill_parent"
         android:layout_height="50dip"
+        android:onClick="btnClick"
         android:text="@string/txt_new" />
 
 </LinearLayout>
