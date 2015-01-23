@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:columnOrderPreserved="false"
+    tools:context=".Login" >
+    
+<TextView 
+    android:text="Username:" 
+    android:layout_column="0" 
+    android:layout_gravity="start"/>
+
+<EditText
+    android:id="@+id/txtuName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_column="1"
+    android:layout_columnSpan="2"
+    android:ems="10" />
+
+<TextView 
+    android:text="Password: " 
+    android:layout_column="0" 
+    android:layout_gravity="start"/>
+
+<EditText
+    android:id="@+id/txtPwd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_column="1"
+    android:layout_columnSpan="2"
+    android:ems="10"
+    android:inputType="textPassword" />
+
+<Space android:layout_column="0" android:layout_gravity="fill" android:layout_columnSpan="3"/>
+
+<Button
+    android:id="@+id/btnUser"
+    android:layout_width="match_parent"
+    android:layout_column="0"
+    android:layout_columnSpan="3"
+    android:nestedScrollingEnabled="true"
+    android:onClick="btnUser"
+    android:text="New User" />
+
+<Button
+    android:id="@+id/btnLogin"
+    android:layout_width="match_parent"
+    android:layout_column="0"
+    android:layout_columnSpan="3"
+    android:nestedScrollingEnabled="true"
+    android:onClick="btnLogin"
+    android:text="Login" />
+
+</GridLayout>
