@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">address book</string>
+    <string name="txt_new">NEW CONTACT</string>
+    <string name="action_settings">NEW CONTACT</string>
+    <string name="title_activity_main_menu">Main Menu</string>
+    <string name="title_activity_adapter">Adapter</string>
+    <string name="title_activity_add_contact">AddContact</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

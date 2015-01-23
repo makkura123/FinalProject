@@ -1,0 +1,38 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:columnCount="3"
+    android:columnOrderPreserved="false" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:text="LOGIN" android:layout_columnSpan="3" android:layout_gravity="center"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+    <TextView android:text="Username: " android:layout_column="0" android:layout_gravity="left"
+        android:layout_row="1" />
+
+    <EditText android:id="@+id/txtUser" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_column="1" android:layout_columnSpan="2"
+        android:ems="10"
+        android:layout_row="1" />
+
+    <TextView android:text="Password: " android:layout_column="0" android:layout_gravity="left"
+        android:layout_row="2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtPwd"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:inputType="text" />
+
+    <Space android:layout_column="0" android:layout_gravity="fill" android:layout_columnSpan="3"
+        android:layout_row="3" />
+
+    <Button android:id="@+id/btnNext" android:layout_column="2" android:text="Next"
+        android:onClick="btnLogin"
+        android:nestedScrollingEnabled="false"
+        android:layout_row="4" />
+
+</GridLayout>

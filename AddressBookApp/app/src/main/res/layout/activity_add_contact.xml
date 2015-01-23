@@ -1,0 +1,37 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:columnCount="3"
+    android:columnOrderPreserved="false" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:text="Add Contact" android:layout_columnSpan="3" android:layout_gravity="center" />
+
+    <TextView android:text="First Name: " android:layout_column="0" android:layout_gravity="left"/>
+
+    <EditText android:id="@+id/txtFirst" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_column="1" android:layout_columnSpan="2"
+        android:ems="10" />
+
+    <TextView android:text="Last Name: " android:layout_column="0" android:layout_gravity="left"/>
+
+    <EditText android:id="@+id/txtLast" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_column="1" android:layout_columnSpan="2"
+        android:ems="10" />
+
+    <TextView android:text="Phone Number: " android:layout_column="0" android:layout_gravity="left"/>
+
+    <EditText android:id="@+id/txtNumber" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_column="1" android:layout_columnSpan="2"
+        android:ems="10" />
+    <TextView android:text="E-Mail: " android:layout_column="0" android:layout_gravity="left"/>
+
+    <EditText android:id="@+id/txtEMail" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_column="1" android:layout_columnSpan="2"
+        android:ems="10" />
+
+    <Space android:layout_column="0" android:layout_gravity="fill" android:layout_columnSpan="3"/>
+
+    <Button android:id="@+id/btnAdd" android:layout_column="2" android:text="Add"
+        android:onClick="btnAdd"
+        android:nestedScrollingEnabled="false" />
+
+</GridLayout>
